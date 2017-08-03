@@ -1,0 +1,192 @@
+@charset "UTF-8";
+@import url(reset.css);
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none; }
+
+html, body, .box {
+  width: 100%;
+  height: 100%;
+  font-size: .16rem;
+  background: #EEE;
+  overflow: hidden; }
+
+body {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  font-family: 微软雅黑; }
+
+input, button, select, textarea, a {
+  outline: none;
+  border: none;
+  background: none; }
+
+@font-face {
+  font-family: "ab";
+  src: url(../icon/iconfont.ttf), url(../icon/iconfont.svg), url(../icon/iconfont.woff), url(../icon/iconfont.eot); }
+.box {
+  font-size: 17px;
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+.header, .footer {
+  height: .40rem; }
+
+.header {
+  font-size: 28px;
+  font-weight: 900;
+  color: #000;
+  text-align: center;
+  line-height: .40rem;
+  background: url(../img/pic_2.jpg);
+  display: -webkit-flex;
+  -webkit-justify-content: space-around;
+  align-items: center; }
+  .header div {
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px; }
+    .header div .iconfont {
+      font-size: 25px; }
+  .header input {
+    width: 75%;
+    height: 35px;
+    background: #fff;
+    border-radius: 22px;
+    text-indent: .35rem;
+    font-size: 19px;
+    background: #fff url(../img/pic_3.jpg) no-repeat;
+    background-position: 0rem; }
+
+.ios1 {
+  -webkit-flex: 1;
+  overflow: hidden;
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%; }
+
+.main {
+  -webkit-flex: 1;
+  overflow: hidden;
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+  position: relative; }
+  .main .swiper-container {
+    width: 100%;
+    height: 1.5rem;
+    background: red; }
+    .main .swiper-container ul {
+      width: 100%;
+      height: 100%; }
+      .main .swiper-container ul img {
+        width: 100%;
+        height: 100%; }
+
+.footer {
+  display: -webkit-flex;
+  -webkit-justify-content: space-around;
+  align-items: center; }
+  .footer div {
+    text-align: center; }
+    .footer div .iconfont {
+      font-size: 23px; }
+
+section {
+  width: 97%;
+  height: auto;
+  margin-left: 1.5%;
+  margin-top: 1.5%; }
+  section dl {
+    width: 100%;
+    height: 1.0rem;
+    background: #FF5555;
+    display: -webkit-flex;
+    -webkit-justify-content: space-around;
+    margin-top: 1.5%; }
+    section dl:nth-child(2) {
+      background: #03A9F5; }
+      section dl:nth-child(2) span {
+        position: absolute;
+        left: 35%; }
+    section dl:nth-child(3) {
+      background: #7EB53D; }
+      section dl:nth-child(3) span {
+        position: absolute;
+        left: 12%; }
+    section dl:nth-child(4) {
+      background: #FF9801; }
+      section dl:nth-child(4) span {
+        position: absolute;
+        left: 12%; }
+    section dl dt {
+      width: 33.3%;
+      height: 100%;
+      border-right: 1px solid #ccc;
+      text-align: center;
+      line-height: .7rem;
+      position: relative; }
+      section dl dt span {
+        position: absolute;
+        top: 39%;
+        left: 26%;
+        font-size: 20px;
+        color: #fff; }
+      section dl dt .iconfont {
+        font-size: .6rem;
+        color: #fff;
+        margin-top: 20%; }
+    section dl dd {
+      width: 66.7%;
+      height: 100%; }
+      section dl dd div {
+        width: 100%;
+        height: 50%;
+        display: -webkit-flex;
+        -webkit-justify-content: space-around; }
+        section dl dd div:nth-child(1) {
+          border-bottom: 1px solid #ccc; }
+        section dl dd div p {
+          width: 50%;
+          height: 100%;
+          color: #fff;
+          text-align: center;
+          line-height: .5rem; }
+          section dl dd div p:nth-child(1) {
+            border-right: 1px solid #ccc; }
+
+/*.sp2{
+	position: absolute;
+	left: 20%;
+}*/
+/* section{
+	position: relative;
+	flex:1;
+	width:100%;
+	height: 100%;
+	overflow: hidden;
+	//overflow-y:scroll;
+	main{
+		//background:#eee;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		flex:1;
+		flex-shrink: 1;
+		top:0;
+		left:100%;
+		overflow: hidden;
+		&.home{
+			left:0;
+		}
+	}
+} */
+
+/*# sourceMappingURL=stylw.css.map */
